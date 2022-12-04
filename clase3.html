@@ -35,7 +35,6 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 300px;
-            justify-items: center;
         }
         .logo{
             width: 150px;
@@ -43,31 +42,27 @@
             justify-self: center;
             display: none;
         }
-        .title{
-            font-size: var(--lg);
-            margin-bottom: 12px;
-            text-align: center;
-        }
-        .subtitle {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin-top: 0;
-            margin-bottom: 32px;
-            text-align: center;
-        }
-        .email-image{
-            width: 132px;
-            height: 132px;
-            border-radius: 50%;
-            background-color: var(--text-input-field);
+
+        .form{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 24px;
+            flex-direction: column;
         }
-        .email-image img{
-            width: 80px;
+        .laber{
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .input-email{
+            margin-bottom: 22px;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12px;
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -84,18 +79,27 @@
             margin-top: 14px;
             margin-bottom: 30px;
         }
-        .resend{
-            font-size: var(--sm);}        
-        .resend span{
-            color: var(--very-light-pink);
+        .form a{
+            font-size: var(--sm);
+            color: var(--hospital-green)
         }
-        .resend a{
-            color: var(--very-light-pink);
-            text-decoration: none;
+        .secondary-button{
+            border-radius: 8px;
+            border: var(--hospital-green) solid 2px;
+            color: var(--hospital-green);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            height: 50px;
         }
         @media (max-width: 412px){
             .logo{
                 display: block;
+            }
+        }
+        @media (min-width: 332px){
+            .secondary-button{
+                width: 300px;
             }
         }
     </style>
@@ -105,22 +109,25 @@
         <div class="form-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <h1 class="title"> Email has breen sent!</h1>
-            <p class="subtitle">Please check you inbox for instructions on how to reset password</p>
-            
-            <div class="email-image">
-                <img src="./icons/email.svg" alt="email">
-            </div>
+            <form action="/" class="form">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="examle@gmail.com" class="input input-email">
 
-            <button class="primary-button login-button">Login</button>
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="*********" class="input input-password">
 
-            <p class="resend">
-                <span>Didn't receive the email?</span>
-                <a href="/">Resend</a>
-            </p>
+                <input type="submit" value="Log in" class="primary-button login-button">
 
+                <p>
+                    <a href="/">Forgot my password</a>
+                </p>
+                
+            </form>
+                    
         </div>
 
+        <button class="secondary-button signup-button">Sign up</button>
+        
     </div>
 </body>
 </html>
