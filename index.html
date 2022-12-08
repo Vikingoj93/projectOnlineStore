@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style>
-        :root{
-            --black:#000000;
-            --white: #FFFFFF;
-            --very-light-pink: #C7C7C7;
-            --text-input-field: #F7F7F7;
-            --dark: #232830;
-            --hospital-green: #ACD9B2;
-        }
-        
-        body{
-            font-family: 'Quicksand', sans-serif;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="nav-container">                   
+            <img class="logo-menu" src="/icons/icon_menu.svg" alt="menu">
+            <img src="/logos/logo_yard_sale.svg" alt="logo">
+            <div class="container-menu">
+                <ul>
+                    <li>
+                        <a href="#">All</a></li>
+                    <li>
+                        <a href="#">Clothes</a>
+                    </li>
+                    <li>
+                        <a href="#">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#">Furnitures</a>
+                    </li>
+                    <li>
+                        <a href="#">Toys</a>
+                    </li>
+                    <li>
+                        <a href="#">Others</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notification-container">
+                <ul class="nav-email">
+                    <li id="nav-email">example@gmail.com</li>
+                    <li>
+                        <img src="/icons/icon_shopping_cart_notification.svg" alt="notications">
+                    </li>
+                </ul>
+                
+                <div class="desktop-menu inactive">
+                    <ul>
+                        <li>
+                            <a href="/">My orders</a>
+                        </li>
+                        <li>
+                            <a href="/">My account</a>
+                        </li>
+                        <li>
+                            <a href="/">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <script src="main.js"></script>
 </body>
 </html>
