@@ -11,52 +11,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav-container">                   
-            <img class="logo-menu" src="/icons/icon_menu.svg" alt="menu">
-            <img src="/logos/logo_yard_sale.svg" alt="logo">
-            <div class="container-menu">
+    <nav class="nav-container">
+        <div class="mobile-menu inactive">
+            <ul>
+                <li>
+                    <a href="/">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Other</a>
+                </li>
+            </ul>
+    
+            <ul>
+                <li>
+                    <a href="/">My orders</a>
+                </li>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+            </ul>
+    
+            <ul>
+                <li class="email">
+                    <a href="/">example@gmail.com</a>
+                </li>
+                <li class="sign-out">
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>
+        <img class="logo-menu" src="/icons/icon_menu.svg" alt="menu">
+        <img src="/logos/logo_yard_sale.svg" alt="logo">
+        <div class="container-menu">
+            <ul>
+                <li>
+                    <a href="#">All</a></li>
+                <li>
+                    <a href="#">Clothes</a>
+                </li>
+                <li>
+                    <a href="#">Electronics</a>
+                </li>
+                <li>
+                    <a href="#">Furnitures</a>
+                </li>
+                <li>
+                    <a href="#">Toys</a>
+                </li>
+                <li>
+                    <a href="#">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="notification-container">
+            <ul class="nav-email">
+                <li id="nav-email">example@gmail.com</li>
+                <li>
+                    <img src="/icons/icon_shopping_cart_notification.svg" alt="notications">
+                </li>
+            </ul>
+            
+            <div class="desktop-menu inactive">
                 <ul>
                     <li>
-                        <a href="#">All</a></li>
-                    <li>
-                        <a href="#">Clothes</a>
+                        <a href="/">My orders</a>
                     </li>
                     <li>
-                        <a href="#">Electronics</a>
+                        <a href="/">My account</a>
                     </li>
                     <li>
-                        <a href="#">Furnitures</a>
-                    </li>
-                    <li>
-                        <a href="#">Toys</a>
-                    </li>
-                    <li>
-                        <a href="#">Others</a>
+                        <a href="/">Sign out</a>
                     </li>
                 </ul>
             </div>
-            <div class="notification-container">
-                <ul class="nav-email">
-                    <li id="nav-email">example@gmail.com</li>
-                    <li>
-                        <img src="/icons/icon_shopping_cart_notification.svg" alt="notications">
-                    </li>
-                </ul>
-                
-                <div class="desktop-menu inactive">
-                    <ul>
-                        <li>
-                            <a href="/">My orders</a>
-                        </li>
-                        <li>
-                            <a href="/">My account</a>
-                        </li>
-                        <li>
-                            <a href="/">Sign out</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        </div>
     </nav>
     <script src="main.js"></script>
 </body>

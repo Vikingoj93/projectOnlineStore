@@ -1,4 +1,4 @@
-
+    /* General */
         :root{
             --black:#000000;
             --white: #FFFFFF;
@@ -14,6 +14,9 @@
             font-family: 'Quicksand', sans-serif;
             margin: 0;
         }
+        
+        /* Nav */
+
         .inactive{
             display: none;
         }
@@ -26,9 +29,58 @@
             color: var(--very-light-pink);
             column-gap: 10px;
         }
-        .nav-container > img{
+        .nav-container > img{      
             padding-left: 20px;
         }
+
+        /* Mobile-menu */
+
+        .mobile-menu{
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 60px;
+        }
+        .mobile-menu a{
+            text-decoration: none;
+            padding: 24px;
+            color: var(--black);
+            font-weight: bold;
+        }
+        .mobile-menu ul{
+            margin: 24px 0px  0px;
+            padding: 0;
+            list-style: none;
+        }
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 2px solid var(--very-light-pink);
+        }
+        .mobile-menu ul:nth-child(2), .mobile-menu ul:nth-child(3) {
+            margin: 24px 0px 0px;
+            padding: 24px 0px 0px;
+        }
+        .mobile-menu ul li {
+            margin-bottom: 16px;
+        }
+        .email{
+            margin-bottom: 5px !important;
+        }
+        .email a{
+            font-size: var(--sm);
+            font-weight: 400;
+        }
+        .sign-out{
+            display: block;
+            text-align: end;
+        }
+        .sign-out a{
+            font-size: var(--sm);
+            font-weight: 600;
+            color: var(--hospital-green);
+        }
+
+        /* Logo y Container-menu */
+        
         .logo-menu{
             display: none;
         }
@@ -64,6 +116,9 @@
             cursor: pointer;
             color: var(--hospital-green);
         }
+
+        /* Notification */
+        
         .notification-container ul{
             display: grid;
             grid-template-columns: 1fr 0fr;
@@ -109,12 +164,24 @@
             margin-bottom: 20px;
             display: inline-block;
         }
+
+        /* Medias-querys */
+        
+        @media (min-width: 621px){
+            .mobile-menu{
+                display: none;
+            }
+        }
+
         @media (max-width: 620px){
             .container-menu{
                 display: none;
             }           
             .logo-menu{
-            display: grid;
+                display: grid;
+            }
+            .desktop-menu{
+                display: none;
             }
             .nav-email{
                 display: none;
